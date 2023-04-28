@@ -4,6 +4,7 @@ import Edit from "./components/Edit.vue";
 import NotFound from "./components/NotFound.vue";
 import Login from "./Login.vue";
 import Register from "./Register.vue";
+import ForgotPassword from "./ForgotPassword.vue";
 
 const routes = [
   {
@@ -17,6 +18,12 @@ const routes = [
     component: Register,
     name: 'register',
     meta: { title: "Register", requiresAuth: false },
+  },
+  {
+    path: "/forgotpassword",
+    component: ForgotPassword,
+    name: 'forgotpassword',
+    meta: { title: "Forgot Password", requiresAuth: false },
   },
   {
     path: "/",
